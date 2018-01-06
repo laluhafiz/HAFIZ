@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+		 <head>
+		 <title>TRAVEL</title>
+		 <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/metro.min.css" rel="stylesheet">
+        <link href="css/onepage-scroll.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+		 
+		 
+		 <body>
+		 	<div class="app-bar bg-black">
+        <a class="app-bar-element" href="...">TRAVEL AGENT</a>
+        <span class="app-bar-divider"></span>
+        <ul class="app-bar-menu">
+            <li><a href="">Home</a></li>
+            <li>
+                <a href="" class="dropdown-toggle">View</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li><a href="">TOP PLACE</a></li>
+                    <li><a href="">CONTACK US</a></li>
+                </ul>
+            </li>
+            <li><a href="">Help</a></li>
+        </ul>
+        </div>
+
+
+
+
+<div id="main">
+        <section class="page-one">
+            <div class="container">
+            <div class="grid">    
+                <div class="row cells1">
+                    <div class="cell">
+                        <div class="carousel auto stop" id="carousel" data-controls="false" data-markers="false" data-effect="fade" data-height="260">
+                            <div class="slide"><img src="images/lele.jpg" alt=""></div>
+                            <div class="slide"><img src="images/lala.jpg" alt=""></div>
+                            <div class="slide"><img src="images/big5.jpg" alt=""></div>
+                            <div class="slide"><img src="images/big1.jpg" alt=""></div>
+							
+                        </div><hr>
+
+                        <h4>AGENT TRAVEL:</h4>
+                        <p class="info">
+                            Tour and Travel Organizer merupakan usaha jasa yang memberi jasa berupa pelayanan tour dan travel domestik. Usaha ini bergerak di bidang pariwisata. Pelayanan yang diberikan kepada konsumen dapat disesuaikan dengan paket dan fasilitas yang diinginkan konsumen. Fasilitas yang diberikan kepada konsumen antara lain akomodasi kendaraan (bus, minibus, pesawat terbang), reservasi hotel, reservasi rumah makan/restoran/catering, tiket masuk tempat wisata, tour leader dan tour guide serta fasilitas lainnya sesuai keinginan konsumen. Usaha ini melayani tour ke beberapa tujuan seperti wisata pulau jawa, bali, lombok dan wisata religi/ziarah.
+                        </p><hr>
+                        <h4>Promo terbatas:</h4>
+                        <h5>Dapatkan potongan <b>100%</b> untuk semua aplikasi android kami !</h5>
+                        <div class="countdown" id="countdown" data-days="7"></div>
+                        <button id="bawah" class="button">Dapatkan penawarannya sekarang !</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    
+        </section>
+
+
+        <section class="page-two">
+            <div class="container">
+            <div class="grid">  
+                <div class="row cells1">
+                    <div class="cell">
+                    <form>
+                        <h3>Silahkan isi form berikut untuk menghubungi kami jika anda tertarik</h3>
+                        <div class="input-control text">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div><br>
+                        <div class="input-control text">
+                            <input type="email" placeholder="Email" required>
+                        </div><br>
+                        <div class="input-control textarea" data-role="input" data-text-auto-resize="true">
+                            <textarea cols="60" placeholder="apa yang anda inginkan"></textarea>
+                        </div><br>
+                        <label class="input-control checkbox">
+                            <input type="checkbox" required>
+                            <span class="check"></span>
+                            <span class="caption">Saya menerima syarat & ketentuan yang berlaku</span>
+                        </label><br>
+                        <input type="reset" value="Reset">
+                        <input class="button" type="submit" value="Submit">
+                    </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        </div>
+	
+
+<script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/jquery.onepage-scroll.js"></script>                    
+        <script src="js/metro.min.js"></script>    
+        <script>
+            $(function(){
+                $("#carousel").carousel();
+            });
+
+            $(function(){
+                $("#countdown").countdown();
+            });
+
+            $("#main").onepage_scroll({
+                sectionContainer: "section",
+                easing: "cubic-bezier(0.180, 0.900, 0.410, 1.210)"
+            });
+
+            $("#bawah").click(function() {
+                $("#main").moveDown();
+            });
+        </script>
+<body>
+</html>
